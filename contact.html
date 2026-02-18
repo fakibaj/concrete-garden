@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | Concrete Garden</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, Arial, sans-serif;
+}
+
+body{
+background:#f4f6f8;
+}
+
+/* HEADER */
+
+header{
+background:#1e1e1e;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+header h2{
+font-size:22px;
+}
+
+header div{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+header a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:16px;
+}
+
+header a:hover{
+color:#fdb913;
+}
+
+/* HERO */
+
+.hero{
+height:250px;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:34px;
+font-weight:bold;
+text-align:center;
+padding:15px;
+}
+
+/* CONTAINER */
+
+.container{
+padding:50px 8%;
+}
+
+/* CONTACT INFO */
+
+.contact-info{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-bottom:40px;
+}
+
+.info-card{
+background:white;
+padding:30px 20px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.12);
+text-align:center;
+transition:0.3s;
+}
+
+.info-card:hover{
+transform:translateY(-5px);
+}
+
+.info-card h3{
+margin-bottom:10px;
+color:#fdb913;
+font-size:20px;
+}
+
+.info-card p{
+font-size:16px;
+color:#333;
+}
+
+/* CONTACT GRID */
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:start;
+}
+
+/* FORM */
+
+form{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}
+
+form h3{
+margin-bottom:20px;
+font-size:22px;
+}
+
+input, textarea{
+
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:15px;
+}
+
+input:focus, textarea:focus{
+outline:none;
+border-color:#fdb913;
+}
+
+/* BUTTON */
+
+button{
+background:#fdb913;
+color:black;
+padding:14px;
+border:none;
+width:100%;
+font-weight:bold;
+cursor:pointer;
+border-radius:8px;
+font-size:16px;
+transition:0.3s;
+}
+
+button:hover{
+background:#e0a800;
+}
+
+/* MAP */
+
+.map{
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}
+
+.map iframe{
+width:100%;
+height:400px;
+border:0;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-float{
+position:fixed;
+bottom:18px;
+right:18px;
+background:#25D366;
+padding:8px;
+border-radius:50%;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:0.3s;
+z-index:1000;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+
+.whatsapp-float img{
+width:26px;
+height:26px;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+font-size:15px;
+}
+
+/* TABLET VIEW */
+
+@media(max-width:1000px){
+
+.contact-info{
+grid-template-columns:repeat(2,1fr);
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+/* MOBILE VIEW */
+
+@media(max-width:600px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+header div{
+margin-top:10px;
+}
+
+header a{
+margin:8px;
+font-size:15px;
+}
+
+.hero{
+height:180px;
+font-size:26px;
+}
+
+.container{
+padding:30px 5%;
+}
+
+.contact-info{
+grid-template-columns:1fr;
+gap:18px;
+}
+
+.info-card{
+padding:20px;
+}
+
+.contact-grid{
+gap:20px;
+}
+
+form{
+padding:20px;
+}
+
+form h3{
+font-size:20px;
+}
+
+.map iframe{
+height:300px;
+}
+
+footer{
+font-size:14px;
+padding:15px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>Concrete Garden</h2>
+
+<div>
+<a href="index.html">Home</a>
+<a href="index.html#products-section">Product</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</header>
+
+<div class="hero">
+Contact Us
+</div>
+
+<div class="container">
+
+<!-- CONTACT INFO -->
+
+<div class="contact-info">
+
+<div class="info-card">
+<h3>📞 Phone</h3>
+<p>+91 9876543210</p>
+</div>
+
+<div class="info-card">
+<h3>📧 Email</h3>
+<p>info@concretegarden.com</p>
+</div>
+
+<div class="info-card">
+<h3>📍 Location</h3>
+<p>Gurgaon, Haryana, India</p>
+</div>
+
+</div>
+
+<!-- FORM AND MAP -->
+
+<div class="contact-grid">
+
+<form onsubmit="sendWhatsApp(); return false;">
+
+<h3>Send Message</h3>
+
+<input type="text" id="name" placeholder="Your Name" required>
+
+<input type="text" id="phone" placeholder="Phone Number" required>
+
+<textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+<button type="submit">Send via WhatsApp</button>
+
+</form>
+
+<div class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=gurgaon&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Concrete Garden. All Rights Reserved.
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+
+<a href="https://wa.me/919876543210" class="whatsapp-float">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+
+</a>
+
+<script>
+
+function sendWhatsApp(){
+
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let message=document.getElementById("message").value;
+
+let url="https://wa.me/919876543210?text="
++"Name: "+encodeURIComponent(name)+"%0a"
++"Phone: "+encodeURIComponent(phone)+"%0a"
++"Message: "+encodeURIComponent(message);
+
+window.open(url,"_blank");
+
+}
+
+</script>
+
+</body>
+</html>

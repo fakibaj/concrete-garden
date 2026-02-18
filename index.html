@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Concrete Garden</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, Arial;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f6f8;
+}
+
+/* HEADER */
+header{
+background:#1e1e1e;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+header h2{
+font-size:22px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:16px;
+}
+
+nav a:hover{
+color:#fdb913;
+}
+
+/* HERO SECTION */
+.hero{
+height:400px;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:32px;
+font-weight:bold;
+text-align:center;
+padding:20px;
+}
+
+/* SECTION */
+section{
+padding:60px 8%;
+text-align:center;
+}
+
+section h2{
+font-size:28px;
+margin-bottom:10px;
+}
+
+/* PRODUCTS GRID */
+.products{
+display:grid;
+grid-template-columns:repeat(4, 1fr);
+gap:25px;
+margin-top:40px;
+}
+
+/* CARD */
+.card{
+background:white;
+padding:15px
+;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.12);
+transition:.3s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 6px 18px rgba(0,0,0,.18);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.card h3{
+margin-top:10px;
+font-size:18px;
+}
+
+.card p{
+color:#666;
+font-size:14px;
+margin-top:5px;
+}
+
+/* FOOTER */
+footer{
+background:black;
+color:white;
+padding:20px;
+text-align:center;
+margin-top:40px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:1000;
+background-color:#25D366;
+padding:10px;
+border-radius:50%;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+
+/* TABLET VIEW */
+@media(max-width:1000px){
+
+.products{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero{
+font-size:26px;
+height:320px;
+}
+
+}
+
+/* MOBILE VIEW */
+@media(max-width:600px){
+
+header{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin:8px;
+font-size:15px;
+}
+
+.hero{
+height:260px;
+font-size:22px;
+padding:15px;
+}
+
+section{
+padding:40px 5%;
+}
+
+.products{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.card img{
+height:180px;
+}
+
+section h2{
+font-size:24px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>Concrete Garden</h2>
+
+<nav>
+<a href="#">Home</a>
+
+<!-- THIS NOW REDIRECTS TO PRODUCT SECTION -->
+<a href="#products-section">Products</a>
+
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<div class="hero">
+Premium RCC Cement Products
+</div>
+
+<!-- ADD ID HERE -->
+<section id="products-section">
+
+<h2>Our Products</h2>
+
+<div class="products">
+
+<!-- WELL RINGS -->
+<a href="well-rings.html" style="text-decoration:none;color:black;">
+<div class="card">
+
+<img src="https://5.imimg.com/data5/SELLER/Default/2023/6/317405006/IK/QT/NT/193979207/rcc-well-ring-1000x1000.jpg">
+
+<h3>RCC Well Rings</h3>
+
+<p>Click to view variants</p>
+
+</div>
+</a>
+
+<!-- RCC PIPES -->
+<div class="card">
+
+<img src="https://5.imimg.com/data5/ANDROID/Default/2022/9/XE/ZK/MP/103306223/product-jpeg-500x500.jpg">
+
+<h3>RCC Pipes</h3>
+
+<p>High quality precast pipes</p>
+
+</div>
+
+<!-- PILLARS -->
+<div class="card">
+
+<img src="https://5.imimg.com/data5/SELLER/Default/2022/3/TD/KX/XT/14766887/precast-rcc-pillar-500x500.jpg">
+
+<h3>Cement Pillars</h3>
+
+<p>Strong and durable pillars</p>
+
+</div>
+
+<!-- COMPOUND WALL -->
+<div class="card">
+
+<img src="https://5.imimg.com/data5/SELLER/Default/2023/5/309777619/XN/YB/FT/186167711/precast-compound-wall-500x500.jpg">
+
+<h3>Compound Wall</h3>
+
+<p>Modern precast wall solutions</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Concrete Garden | All Rights Reserved
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/919876543210" 
+class="whatsapp-float" 
+target="_blank">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+width="26" height="26">
+
+</a>
+
+</body>
+</html>
