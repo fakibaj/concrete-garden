@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RCC Well Ring Variants</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Segoe UI;
+background:#f4f6f8;
+}
+
+header{
+background:#1e1e1e;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+}
+
+header a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:300px;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://5.imimg.com/data5/SELLER/Default/2023/6/317405006/IK/QT/NT/193979207/rcc-well-ring-1000x1000.jpg');
+background-size:cover;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:36px;
+font-weight:bold;
+}
+
+.container{
+padding:60px 8%;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+@media(max-width:1000px){
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+.grid{
+grid-template-columns:repeat(1,1fr);
+}
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:1000;
+background-color:#25D366;
+padding:10px;
+border-radius:50%;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+
+
+button{
+margin-top:10px;
+padding:10px;
+width:100%;
+background:#fdb913;
+border:none;
+font-weight:bold;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#e0a800;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>Concrete Garden</h2>
+
+<a href="index.html">⬅ Back</a>
+
+</header>
+
+<div class="hero">
+RCC Well Ring Variants
+</div>
+
+<div class="container">
+
+<h2>Select Size</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://5.imimg.com/data5/SELLER/Default/2023/6/317405006/IK/QT/NT/193979207/rcc-well-ring-1000x1000.jpg">
+
+<h3>4 Feet Well Ring</h3>
+
+<button onclick="order('4 Feet Well Ring')">Inquiry</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://5.imimg.com/data5/SELLER/Default/2023/6/317405006/IK/QT/NT/193979207/rcc-well-ring-1000x1000.jpg">
+
+<h3>3.5 Feet Well Ring</h3>
+
+<button onclick="order('3.5 Feet Well Ring')">Inquiry</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://5.imimg.com/data5/SELLER/Default/2023/6/317405006/IK/QT/NT/193979207/rcc-well-ring-1000x1000.jpg">
+
+<h3>3 Feet Well Ring</h3>
+
+<button onclick="order('3 Feet Well Ring')">Inquiry</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://5.imimg.com/data5/SELLER/Default/2023/6/317405006/IK/QT/NT/193979207/rcc-well-ring-1000x1000.jpg">
+
+<h3>2.5 Feet Well Ring</h3>
+
+<button onclick="order('2.5 Feet Well Ring')">Inquiry</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function order(product){
+
+let url="https://wa.me/919876543210?text=I want to order "+product;
+
+window.open(url,"_blank");
+
+}
+
+</script>
+
+<a href="https://wa.me/919876543210" 
+class="whatsapp-float" 
+target="_blank">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+width="30" height="30">
+
+</a>
+
+</body>
+</html>
